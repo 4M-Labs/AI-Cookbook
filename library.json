@@ -1,0 +1,261 @@
+{
+  "name": "AI Cookbook",
+  "description": "Production-ready patterns, prompting techniques, and agent architectures for building with AI. From 4M Labs.",
+  "url": "https://cookbook.4mlabs.io",
+  "github": "https://github.com/4M-Labs/AI-Cookbook",
+  "license": "MIT",
+  "updated": "2025-07-24",
+  "categories": {
+    "prompting-techniques": {
+      "label": "Prompting Techniques",
+      "description": "16 proven methods for structuring AI prompts — from zero-shot to agent orchestration.",
+      "items": [
+        {
+          "title": "Chain-of-Thought Prompting",
+          "path": "prompting-techniques/chain-of-thought.md",
+          "description": "Guide the model through step-by-step reasoning before arriving at an answer.",
+          "tags": ["reasoning", "step-by-step", "intermediate-steps", "few-shot-cot"]
+        },
+        {
+          "title": "Zero-Shot Prompting",
+          "path": "prompting-techniques/zero-shot-prompting.md",
+          "description": "Get useful output from a model with no examples — just a clear instruction.",
+          "tags": ["no-examples", "instruction-following", "baseline", "simple-tasks"]
+        },
+        {
+          "title": "Few-Shot Prompting",
+          "path": "prompting-techniques/few-shot-prompting.md",
+          "description": "Provide a handful of examples to teach the model the pattern you want.",
+          "tags": ["examples", "pattern-learning", "in-context-learning", "classification"]
+        },
+        {
+          "title": "ReAct Prompting",
+          "path": "prompting-techniques/react-prompting.md",
+          "description": "Combine reasoning and acting — the model thinks, then calls tools, then thinks again.",
+          "tags": ["reasoning", "acting", "tools", "interleaved", "agent-loop"]
+        },
+        {
+          "title": "Tree of Thoughts",
+          "path": "prompting-techniques/tree-of-thoughts.md",
+          "description": "Explore multiple reasoning branches in parallel and backtrack when needed.",
+          "tags": ["exploration", "branching", "backtracking", "complex-problems"]
+        },
+        {
+          "title": "Role Prompting",
+          "path": "prompting-techniques/role-prompting.md",
+          "description": "Assign a persona or expertise to the model to shape tone, depth, and domain.",
+          "tags": ["persona", "expertise", "tone", "domain-knowledge"]
+        },
+        {
+          "title": "Self-Consistency",
+          "path": "prompting-techniques/self-consistency.md",
+          "description": "Sample multiple reasoning paths and pick the most common answer.",
+          "tags": ["voting", "multiple-paths", "reliability", "sampling"]
+        },
+        {
+          "title": "ART Prompting",
+          "path": "prompting-techniques/art-prompting.md",
+          "description": "Automatic Reasoning and Tool-use — let the model select and chain tools autonomously.",
+          "tags": ["automatic", "tool-selection", "reasoning", "meta-prompting"]
+        },
+        {
+          "title": "Automatic Prompt Engineering",
+          "path": "prompting-techniques/automatic-prompt-engineering.md",
+          "description": "Use AI to optimize its own prompts — generate variants and score them.",
+          "tags": ["optimization", "prompt-generation", "evaluation", "APE"]
+        },
+        {
+          "title": "Agent Prompting",
+          "path": "prompting-techniques/agent-prompting.md",
+          "description": "Structure prompts that give models agency — goals, tools, memory, and loops.",
+          "tags": ["agency", "goals", "tools", "memory", "agentic"]
+        }
+      ]
+    },
+    "architecture": {
+      "label": "Architecture Guides",
+      "description": "Deep dives into AI system design — model architectures, scaling, and monitoring.",
+      "items": [
+        {
+          "title": "Modular Design for AI Applications",
+          "path": "architecture/modular-design.md",
+          "description": "Component-based architecture for building maintainable, testable AI systems.",
+          "tags": ["modularity", "components", "separation-of-concerns", "service-layer"]
+        },
+        {
+          "title": "Monitoring & Observability",
+          "path": "architecture/monitoring.md",
+          "description": "Implement monitoring, observability, and evaluation for production AI systems.",
+          "tags": ["monitoring", "observability", "logging", "evaluation", "production"]
+        },
+        {
+          "title": "Scalable Processing",
+          "path": "architecture/scalable-processing.md",
+          "description": "Handle high throughput and maintain performance under load in AI applications.",
+          "tags": ["scaling", "throughput", "performance", "load", "distributed"]
+        },
+        {
+          "title": "Transformer Implementation",
+          "path": "architecture/transformer_implementation.py",
+          "description": "Complete transformer architecture from scratch in Python.",
+          "tags": ["transformer", "implementation", "python", "attention"]
+        },
+        {
+          "title": "Decoder-Only Architecture",
+          "path": "architecture/decoder_only_implementation.py",
+          "description": "GPT-style decoder-only model implementation.",
+          "tags": ["decoder", "gpt", "causal", "autoregressive"]
+        },
+        {
+          "title": "Encoder-Only Architecture",
+          "path": "architecture/encoder_only_implementation.py",
+          "description": "BERT-style encoder-only model implementation.",
+          "tags": ["encoder", "bert", "bidirectional", "classification"]
+        },
+        {
+          "title": "Encoder-Decoder Architecture",
+          "path": "architecture/encoder_decoder_implementation.py",
+          "description": "T5-style encoder-decoder model for sequence-to-sequence tasks.",
+          "tags": ["encoder-decoder", "seq2seq", "t5", "translation"]
+        },
+        {
+          "title": "Mixture of Experts",
+          "path": "architecture/mixture_of_experts_implementation.py",
+          "description": "Sparse MoE architecture that routes tokens to specialized expert sub-networks.",
+          "tags": ["mixture-of-experts", "sparse", "routing", "scaling"]
+        },
+        {
+          "title": "Sparse Attention",
+          "path": "architecture/sparse_attention_implementation.py",
+          "description": "Efficient attention mechanisms that reduce quadratic complexity.",
+          "tags": ["sparse-attention", "efficiency", "long-context", "linear"]
+        }
+      ]
+    },
+    "agents": {
+      "label": "Agent Patterns",
+      "description": "6 production agent architectures with TypeScript and Python implementations.",
+      "items": [
+        {
+          "title": "Autonomous Agent",
+          "path": "agents/autonomous-agent/README.md",
+          "description": "Self-directed agent that operates in a perceive-reason-act loop with minimal human input.",
+          "tags": ["autonomous", "perceive-reason-act", "loop", "memory", "environment"],
+          "implementations": {
+            "typescript": "agents/autonomous-agent/autonomous-agent.ts",
+            "python": "agents/autonomous-agent/autonomous_agent.py"
+          }
+        },
+        {
+          "title": "Evaluator-Optimizer",
+          "path": "agents/evaluator-optimizer/README.md",
+          "description": "Generate-then-evaluate loop that refines output until it meets quality criteria.",
+          "tags": ["evaluation", "feedback-loop", "quality", "refinement", "iterative"],
+          "implementations": {
+            "typescript": "agents/evaluator-optimizer/evaluator-optimizer.ts",
+            "python": "agents/evaluator-optimizer/evaluator_optimizer.py"
+          }
+        },
+        {
+          "title": "Orchestrator-Workers",
+          "path": "agents/orchestrator-workers/README.md",
+          "description": "Central coordinator dispatches tasks to specialized worker agents and synthesizes results.",
+          "tags": ["orchestration", "workers", "delegation", "coordination", "specialized"],
+          "implementations": {
+            "typescript": "agents/orchestrator-workers/orchestrator-workers.ts",
+            "python": "agents/orchestrator-workers/orchestrator_workers.py"
+          }
+        },
+        {
+          "title": "Parallelization",
+          "path": "agents/parallelization/README.md",
+          "description": "Run independent AI tasks concurrently, merge results, respect dependencies.",
+          "tags": ["parallel", "concurrent", "fan-out", "fan-in", "throughput"],
+          "implementations": {
+            "typescript": "agents/parallelization/parallelization.ts",
+            "python": "agents/parallelization/parallelization_agent.py"
+          }
+        },
+        {
+          "title": "Prompt Chaining",
+          "path": "agents/prompt-chaining/README.md",
+          "description": "Sequential pipeline where each step's output feeds the next.",
+          "tags": ["chain", "sequential", "pipeline", "handoff", "modular"],
+          "implementations": {
+            "typescript": "agents/prompt-chaining/prompt-chaining.ts",
+            "python": "agents/prompt-chaining/prompt_chaining.py"
+          }
+        },
+        {
+          "title": "Routing",
+          "path": "agents/routing/README.md",
+          "description": "Classify input and dispatch to the best-fit handler, model, or workflow.",
+          "tags": ["routing", "classification", "dispatch", "triage", "specialized"],
+          "implementations": {
+            "typescript": "agents/routing/routing-agent.ts",
+            "python": "agents/routing/routing_agent.py"
+          }
+        }
+      ]
+    },
+    "docs": {
+      "label": "Documentation",
+      "description": "Guides for getting started, troubleshooting, and understanding agent patterns.",
+      "items": [
+        {
+          "title": "Building Effective AI Agents",
+          "path": "docs/README.md",
+          "description": "Comprehensive guidance on building effective AI agents from production experience.",
+          "tags": ["overview", "best-practices", "production", "guide"]
+        },
+        {
+          "title": "Getting Started",
+          "path": "docs/setup/getting-started.md",
+          "description": "Set up your environment and run your first agent pattern.",
+          "tags": ["setup", "installation", "quickstart", "prerequisites"]
+        },
+        {
+          "title": "Troubleshooting Guide",
+          "path": "docs/troubleshooting.md",
+          "description": "Diagnose and resolve common issues with AI agent patterns.",
+          "tags": ["troubleshooting", "debugging", "errors", "common-issues"]
+        },
+        {
+          "title": "Orchestrator-Workers Pattern",
+          "path": "docs/patterns/orchestrator-workers.md",
+          "description": "Deep dive into the orchestrator-workers coordination pattern.",
+          "tags": ["orchestration", "workers", "pattern", "coordination"]
+        },
+        {
+          "title": "Parallelization Pattern",
+          "path": "docs/patterns/parallelization.md",
+          "description": "Concurrent execution and dependency management for AI tasks.",
+          "tags": ["parallel", "concurrent", "pattern", "dependencies"]
+        },
+        {
+          "title": "Prompt Chaining Pattern",
+          "path": "docs/patterns/prompt-chaining.md",
+          "description": "Sequential pipeline pattern for multi-step AI workflows.",
+          "tags": ["chain", "sequential", "pattern", "pipeline"]
+        },
+        {
+          "title": "Routing Pattern",
+          "path": "docs/patterns/routing.md",
+          "description": "Input classification and dispatch pattern for AI systems.",
+          "tags": ["routing", "classification", "pattern", "dispatch"]
+        }
+      ]
+    }
+  },
+  "stats": {
+    "totalFiles": 29,
+    "markdown": 29,
+    "pythonImplementations": 12,
+    "typescriptImplementations": 0,
+    "categories": 4,
+    "promptingTechniques": 10,
+    "architectureGuides": 9,
+    "agentPatterns": 6,
+    "docsPages": 7
+  }
+}
